@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgb(238, 238, 238);
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+header{
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #9c4cce;
+}
+.logo a{
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    width: 50px;
+    height: 50px;
+    background: #eee;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+.logo h6{
+    font-size: 1rem;
+    color: white;
+}
+.nav_list{
+    display: flex;
+    align-items: center;
+}
+.nav_item{
+    padding: 0 1rem;
+    margin: 0 8px;
+}
+.nav_link{
+    font-size: 1rem;
+    color: #eee;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+header.nav_link:hover{
+    background: #4cce9e;
+
+}
+.bx-menu,.bx-x{
+    display: none;
+}
+.bxs-moon{
+    display: block;
+    width: 30px;
+    color: #eee;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    background: #9c4cce;
+    border: 2px solid #ffffff;
+}
+.dark{
+    background: #000000;
+    color: white;
+}
+header.dark{
+    background: #000000;
+    color: white;
+    border-bottom: 2px solid #4cce9e;
+}
+@media screen and (max-width: 768px){
+    header{
+        padding: 0 28px;
+        justify-content: space-between;
+        height: 48px;
+    }
+  .logo a{
+    font-size: 0.9rem;
+  }
+  .logo img{
+    width: 30px;
+  }
+  .bx-menu{
+    display: inline;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+
+  }
+  .bx-x{
+    display: block;
+    position: absolute;
+    right: 24px;
+    font-size: 24px;
+    border-radius: 50%;
+    color: white;
+  }
+  .bx-x:hover{
+    background: #4cce9e;
+  }
+  .nav{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background: #9c4cce;
+    width: 60%;
+    height: 100vh;
+    color: #eee;
+    transition: 0.3s;
+    padding: 24px 0;
+    z-index: 100;
+    border-radius: 0 0 0 50%;
+  }
+  .nav_list{
+    display: flex;
+    flex-direction: column;
+  }
+.nav_item{
+    font-size: 0.9rem;
+    margin: 2rem 0;
+  }
+  .active{
+    right: 0;
+  }
+}
